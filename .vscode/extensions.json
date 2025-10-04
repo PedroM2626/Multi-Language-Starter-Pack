@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "formulahendry.code-runner",
+    "golang.go",
+    "redhat.java",
+    "dbaeumer.vscode-eslint",
+    "fwcd.kotlin",
+    "dart-code.dart-code",
+    "julialang.language-julia",
+    "scalameta.metals",
+    "haskell.haskell",
+    "jakebecker.elixir-ls",
+    "timonwong.shellcheck",
+    "rust-lang.rust-analyzer",
+    "ms-vscode.cpptools",
+    "ms-dotnettools.csharp",
+    "vscjava.vscode-java-pack",
+    "rebornix.ruby",
+    "sumneko.lua",
+    "ms-vscode.cmake-tools",
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-vscode.vscode-typescript-next",
+    "esbenp.prettier-vscode",
+    "xabikos.JavaScriptSnippets"
+  ]
+}

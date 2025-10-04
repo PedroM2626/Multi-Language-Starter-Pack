@@ -1,0 +1,161 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Lua",
+      "type": "shell",
+      "command": "lua text.lua",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+   ,
+   {
+     "label": "Run Ruby",
+     "type": "shell",
+     "command": "ruby main.rb",
+     "group": "build",
+     "problemMatcher": []
+   }
+   ,
+   {
+     "label": "Run Rust",
+     "type": "shell",
+     "command": "rustc main.rs && ./main",
+     "group": "build",
+     "problemMatcher": []
+   }
+   ,
+   {
+     "label": "Run C",
+     "type": "shell",
+     "command": "gcc main.c -o main && ./main",
+     "group": "build",
+     "problemMatcher": []
+   }
+   ,
+   {
+     "label": "Run C++",
+     "type": "shell",
+     "command": "g++ main.cpp -o main && ./main",
+     "group": "build",
+     "problemMatcher": []
+   }
+   ,
+   {
+     "label": "Run C#",
+     "type": "shell",
+     "command": "mcs main.cs && mono main.exe",
+     "group": "build",
+     "problemMatcher": []
+   }
+   ,
+   {
+     "label": "Run Java",
+     "type": "shell",
+     "command": "javac Main.java && java Main",
+     "group": "build",
+     "problemMatcher": []
+   }
+    ,
+    {
+      "label": "Run Godot (.gd)",
+      "type": "shell",
+      "command": "godot --headless --script skibidi.gd",
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+    ,
+    {
+      "label": "Run Go",
+      "type": "shell",
+      "command": "go run main.go",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Node.js",
+      "type": "shell",
+      "command": "node main.js",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run TypeScript",
+      "type": "shell",
+      "command": "tsc main.ts && node main.js",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Kotlin",
+      "type": "shell",
+      "command": "kotlinc main.kt -include-runtime -d main.jar && java -jar main.jar",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Swift",
+      "type": "shell",
+      "command": "swift main.swift",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Perl",
+      "type": "shell",
+      "command": "perl main.pl",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Scala",
+      "type": "shell",
+      "command": "scala main.scala",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Haskell",
+      "type": "shell",
+      "command": "runghc main.hs",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Dart",
+      "type": "shell",
+      "command": "dart run main.dart",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Julia",
+      "type": "shell",
+      "command": "julia main.jl",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Elixir",
+      "type": "shell",
+      "command": "elixir main.exs",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Shell Script",
+      "type": "shell",
+      "command": "bash main.sh",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

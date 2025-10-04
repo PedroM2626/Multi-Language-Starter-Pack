@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[application]
+config/name="ExemploGodot"
+config/icon="res://icon.png"
+
+[rendering]
+quality/intended_usage=0
