@@ -64,7 +64,7 @@
     {
       "label": "Run Godot (.gd)",
       "type": "shell",
-      "command": "godot --headless --script skibidi.gd",
+      "command": "godot --headless --script main.gd",
       "group": "build",
       "problemMatcher": [],
       "presentation": {
