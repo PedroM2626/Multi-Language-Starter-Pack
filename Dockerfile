@@ -1,32 +1,34 @@
 # Dockerfile para workspace multilínguas
 FROM ubuntu:24.04
 
-# Instala dependências básicas e suporte a múltiplas linguagens
+## Instala dependências básicas e suporte a múltiplas linguagens
 RUN apt-get update && apt-get install -y \
     python3 python3-pip python3-venv \
-    jupyter-notebook \
-    python3-jupyter-client \
+    jupyter-notebook python3-jupyter-client \
     r-base \
-    openjdk-21-jdk \
-    gcc g++ \
+    openjdk-21-jdk default-jdk \
+    gcc g++ build-essential \
     mono-complete \
     ruby-full \
     lua5.4 \
     php \
     golang-go \
     nodejs npm \
-    default-jdk \
     kotlin \
-    swiftlang \
     perl \
     scala \
-    haskell-platform \
-    dart \
-    julia \
+    ghc cabal-install haskell-stack \
     elixir \
     zsh \
-    build-essential \
-    curl git wget && \
+    curl git wget unzip \
+    apt-transport-https ca-certificates gnupg && \
+    rm -rf /var/lib/apt/lists/*
+
+## Instala Dart (repositório oficial)
+RUN install -d -m 0755 /etc/apt/keyrings && \
+    curl -fsSL https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /etc/apt/keyrings/dart.gpg && \
+    sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/dart.gpg] https://storage.googleapis.com/download.dartlang.org/linux/debian stable main" > /etc/apt/sources.list.d/dart_stable.list' && \
+    apt-get update && apt-get install -y dart && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Instala Godot Engine (para rodar arquivos .gd)

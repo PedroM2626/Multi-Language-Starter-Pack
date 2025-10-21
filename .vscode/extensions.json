@@ -8,6 +8,7 @@
     "dbaeumer.vscode-eslint",
     "fwcd.kotlin",
     "dart-code.dart-code",
+    "dart-code.flutter",
     "julialang.language-julia",
     "scalameta.metals",
     "haskell.haskell",
@@ -24,6 +25,9 @@
     "ms-toolsai.jupyter",
     "ms-vscode.vscode-typescript-next",
     "esbenp.prettier-vscode",
-    "xabikos.JavaScriptSnippets"
+    "xabikos.JavaScriptSnippets",
+    "REditorSupport.r",
+    "tamasfe.even-better-toml",
+    "ms-azuretools.vscode-docker"
   ]
 }

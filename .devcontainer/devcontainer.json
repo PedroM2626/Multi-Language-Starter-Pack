@@ -1,0 +1,34 @@
+{
+  "name": "multilang-workspace",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "REditorSupport.r",
+    "ms-vscode.cpptools",
+    "ms-dotnettools.csharp",
+    "rebornix.ruby",
+    "sumneko.lua",
+    "golang.go",
+    "ms-vscode.vscode-typescript-next",
+    "redhat.java",
+    "vscjava.vscode-java-pack",
+    "fwcd.kotlin",
+    "scala-lang.scala",
+    "haskell.haskell",
+    "julialang.language-julia",
+    "elixir-lsp.elixir-ls",
+    "tamasfe.even-better-toml",
+    "rust-lang.rust-analyzer",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "dart --version || true"
+}
